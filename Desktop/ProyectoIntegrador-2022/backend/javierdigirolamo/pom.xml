@@ -77,8 +77,30 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                               <artifactItem>
+                                   <groupId>org.springframework.boot</groupId>
+                                   <artifactId>spring-boot-maven-plugin</artifactId>
+                                   <groupId>com.github.jsimone</groupId>
+                                   <artifactId>webapp-runner</artifactId>
+                                   <version>8.5.31.0</version>
+                                   <destFileName>webapp-runner.jar</destFileName>
+                               </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+                
                 <configuration>
                     <excludes>
                         <exclude>
@@ -87,8 +109,9 @@
                         </exclude>
                     </excludes>
                 </configuration>
-            </plugin>
-        </plugins>
+            </plugin>                   
+                         
+         </plugins>
     </build>
 
 </project>
