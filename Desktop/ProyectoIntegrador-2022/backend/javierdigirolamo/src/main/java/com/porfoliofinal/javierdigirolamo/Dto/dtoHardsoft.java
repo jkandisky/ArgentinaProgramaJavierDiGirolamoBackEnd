@@ -6,7 +6,6 @@ package com.porfoliofinal.javierdigirolamo.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-
 public class dtoHardsoft {
     @NotBlank
     private String nombreH;
@@ -40,3 +39,5 @@ public class dtoHardsoft {
     
     
 }
+
+
