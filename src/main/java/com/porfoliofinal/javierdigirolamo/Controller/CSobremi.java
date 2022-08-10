@@ -25,8 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "https://javierdigirolamofront.web.app")
 public class CSobremi {
     @Autowired
-    SSobremi sSobremi;  
-    
+    SSobremi sSobremi;     
     @GetMapping("/lista")
     public ResponseEntity<List<Sobremi>> list(){
         List<Sobremi> list = sSobremi.list();

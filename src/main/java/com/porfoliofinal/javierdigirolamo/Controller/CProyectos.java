@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "https://javierdigirolamofront.web.app")
 public class CProyectos {
     @Autowired
-    SProyectos sProyectos;  
+    SProyectos sProyectos;
     
     @GetMapping("/lista")
     public ResponseEntity<List<Proyectos>> list(){
