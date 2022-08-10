@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/acelab")
-@CrossOrigin(origins = "https://javierdigirolamofront.web.app")
+@CrossOrigin(origins = "https://javierdigirolamofront.web.app/acelab")
 public class CAcercade {
     @Autowired
     SAcercade sAcercade;  
