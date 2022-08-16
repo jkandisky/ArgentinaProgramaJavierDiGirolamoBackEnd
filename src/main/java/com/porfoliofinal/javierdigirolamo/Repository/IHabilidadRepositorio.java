@@ -4,15 +4,15 @@
  */
 package com.porfoliofinal.javierdigirolamo.Repository;
 
-import com.porfoliofinal.javierdigirolamo.Entity.Hardsoft;
+import com.porfoliofinal.javierdigirolamo.Entity.Habilidad;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public interface RHardsoft extends JpaRepository<Hardsoft, Integer>{
-    public Optional<Hardsoft> findByNombreH(String nombreH);
-    public boolean existsByNombreH(String nombreH);
-    
+
+
+public interface IHabilidadRepositorio extends JpaRepository<Habilidad, Integer>{
+    public Optional<Habilidad> findByNombreHab(String nombreHab);
+    public boolean existsByNombreHab(String nombreHab);
+
     
 }
