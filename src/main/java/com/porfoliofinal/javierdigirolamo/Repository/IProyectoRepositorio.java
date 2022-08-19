@@ -4,15 +4,11 @@
  */
 package com.porfoliofinal.javierdigirolamo.Repository;
 
-import com.porfoliofinal.javierdigirolamo.Entity.Proyectos;
+import com.ivanwportfolio.arprog.Entidad.Proyecto;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public interface RProyectos extends JpaRepository<Proyectos, Integer>{
-    public Optional<Proyectos> findByNombreP(String nombreP);
-    public boolean existsByNombreP(String nombreP);
-    
-    
+public interface IProyectoRepositorio extends JpaRepository<Proyecto, Integer>{
+    public Optional<Proyecto> findByNombreProy(String nombreProy);
+    public boolean existsByNombreProy(String nombreProy);
 }
