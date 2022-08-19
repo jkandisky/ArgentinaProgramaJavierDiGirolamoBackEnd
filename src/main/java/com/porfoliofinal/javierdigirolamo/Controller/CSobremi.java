@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("soblab")
+@RequestMapping("/soblab")
 @CrossOrigin(origins = "https://javierdigirolamofront.web.app")
 public class CSobremi {
     @Autowired
